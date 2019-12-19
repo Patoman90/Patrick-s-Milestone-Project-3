@@ -1,13 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
-from config import Config
-
+from bson.objectid import ObjectId
 import os
 
 app = Flask(__name__)
-app.config['MONGO_URI'] = "mongodb+srv://bootRoot90:MsObongo1990@myfirstcluster-lw6no.mongodb.net/test?retryWrites=true&w=majority"
+app.config['MONGO_URI'] = 'mongodb+srv://bootRoot90:MsObongo1990@myFirstCluster-lw6no.mongodb.net/DataCentricLocksProject.Locks?retryWrites=true&w=majority'
 app.config['MONGO_DBNAME'] = 'DataCentricLocksProject'
-app.config.from_object(Config)
 mongo = PyMongo(app)
 
 
@@ -22,4 +20,6 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host=os.environ.get('IP'),
+            port=int(os.environ.get('PORT')),
+            debug=True)
