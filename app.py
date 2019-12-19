@@ -2,9 +2,11 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 import os
+if os.path.exists("env.py"):
+    import env
 
 app = Flask(__name__)
-app.config['MONGO_URI'] = 'mongodb+srv://bootRoot90:MsObongo1990@myFirstCluster-lw6no.mongodb.net/DataCentricLocksProject.Locks?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = os.environ.get("MONGO_URI")
 app.config['MONGO_DBNAME'] = 'DataCentricLocksProject'
 mongo = PyMongo(app)
 
