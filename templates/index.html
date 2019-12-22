@@ -7,16 +7,16 @@
  <ul class="collapsible">
     {% for lock in locks %}
       <li>
-         <div class="collapsible-header">
+          <div class="collapsible-header">
              <i class="material-icons">info</i>
              {{ lock.Brand }} 
-         </div>
-         <div class="collapsible-body">
+          </div>
+          <div class="collapsible-body">
              <span>{{ lock.Description }} </span>
-             <div class="collapsible-body">
+          </div>
+          <div class="collapsible-body">
                  <span>{{ lock.Pros }} - {{ lock.Cons }} </span>
-             </div>
-         </div>
+          </div>
       </li>
     {% endfor %}
  </ul> 
