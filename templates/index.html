@@ -8,14 +8,14 @@
     {% for lock in locks %}
       <li>
           <div class="collapsible-header">
-             <i class="material-icons">info</i>
+             <i class="material-icons">keyboard_arrow_down</i>
              {{ lock.Brand }} 
           </div>
           <div class="collapsible-body">
-             <span>{{ lock.Description }} </span>
+             <span><i class="material-icons">info</i>{{ lock.Description }} </span>
           </div>
           <div class="collapsible-body">
-                 <span>{{ lock.Pros }} - {{ lock.Cons }} </span>
+                 <span><i class="material-icons">check</i>{{ lock.Pros }} <i class="material-icons">clear</i>{{ lock.Cons }} </span>
           </div>
       </li>
     {% endfor %}
