@@ -32,7 +32,9 @@ def index():
 # This code looks for the reviews page and returns reviews.html.
 @app.route('/add_review')
 def add_review():
-    return render_template('reviews.html')
+    context = mongo.db.Locks.add()
+    print(context)
+    return render_template('reviews.html', locks=context)
 
 # if statement with the app.run method.
 if __name__ == '__main__':
