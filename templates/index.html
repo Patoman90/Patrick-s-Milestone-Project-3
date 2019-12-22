@@ -5,31 +5,30 @@
 <h2>Padlocks</h2>
 
 {% for lock in locks %}
-<p>{{ lock.Name }}</p>
-<p>{{ lock.Category }}</p>
-<p>{{ lock.Model }}</p>
-<p>{{ lock.Type }}</p>
-<p>{{ lock.Security_rating }}</p>
-<p>{{ lock.Application }}</p>
-<p>{{ lock.Pros }}</p>
-<p>{{ lock.Cons }}</p>
+
+{{ lock.Brand }} 
+{{ lock.Description }}
+{{ lock.Pros }}
+{{ lock.Cons }}
 
 {% endfor %}
 
  <ul class="collapsible">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-    </li>
-  </ul>
+    {% for lock in locks %}
+      <li>
+         <div class="collapsible-header">
+             <i class="material-icons">info</i>
+             {{ lock.Brand }} 
+         </div>
+         <div class="collapsible-body">
+             <span>{{ lock.Description }} </span>
+             <div class="collapsible-body">
+                 <span>{{ lock.Pros }} - {{ lock.Cons }} </span>
+             </div>
+         </div>
+      </li>
+    {% endfor %}
+ </ul> 
         
 {% endblock %}
 
