@@ -13,6 +13,8 @@
 # Prototypes and ideas:
 
 # Technologies used:
+Html5,CSS3,Javascript,Jquery,Python3,Heroku,MongoDB Atlas,
+Materialize,
 
 # Testing
 

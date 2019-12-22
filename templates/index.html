@@ -6,23 +6,31 @@
 
 {% for lock in locks %}
 <p>{{ lock.Name }}</p>
-<br>
 <p>{{ lock.Category }}</p>
-<br>
 <p>{{ lock.Model }}</p>
-<br>
 <p>{{ lock.Type }}</p>
-<br>
 <p>{{ lock.Security_rating }}</p>
-<br>
 <p>{{ lock.Application }}</p>
-<br>
 <p>{{ lock.Pros }}</p>
-<br>
 <p>{{ lock.Cons }}</p>
-<br>
+
 {% endfor %}
 
+ <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+        
 {% endblock %}
 
 
