@@ -32,7 +32,7 @@ def index():
 # This code looks for the reviews page and returns reviews.html.
 @app.route('/add_review')
 def add_review():
-    return render_template('reviews.html')
+    return render_template('add_reviews.html')
 
 # if statement with the app.run method.
 if __name__ == '__main__':
