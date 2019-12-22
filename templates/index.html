@@ -4,15 +4,6 @@
 
 <h2>Padlocks</h2>
 
-{% for lock in locks %}
-
-{{ lock.Brand }} 
-{{ lock.Description }}
-{{ lock.Pros }}
-{{ lock.Cons }}
-
-{% endfor %}
-
  <ul class="collapsible">
     {% for lock in locks %}
       <li>
