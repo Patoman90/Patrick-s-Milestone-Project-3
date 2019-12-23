@@ -30,14 +30,14 @@ def index():
     return render_template('index.html', locks=context)
 
 # This code looks for the reviews page and returns reviews.html.
-@app.route('/add_review', methods=['GET','POST'])
-def add_review(): 
-    if request.method=='POST':
-        #Grab content of form and push to database
-    return render_template('add_reviews.html')
+@app.route('/add_review', methods=['GET', 'POST'])
+def add_review():
+    if request.method == 'POST':
+        # Grab content of form and push to database
+        return render_template('add_reviews.html')
 
 # if statement with the app.run method.
-if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
-            debug=True)
+    if __name__ == '__main__':
+        app.run(host=os.environ.get('IP'),
+                port=int(os.environ.get('PORT')),
+                debug=True)
