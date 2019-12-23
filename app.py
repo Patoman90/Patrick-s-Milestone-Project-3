@@ -29,12 +29,18 @@ def index():
 
     return render_template('index.html', locks=context)
 
-# This code looks for the reviews page and returns reviews.html.
-@app.route('/add_review', methods=['GET', 'POST'])
-def add_review():
+# This code adds a lock to the database.
+@app.route('/add_lock', methods=['POST'], )
+def add_lock():
     if request.method == 'POST':
         # Grab content of form and push to database
-        return render_template('add_reviews.html')
+        return render_template('add_lock.html', input_options=mongo.db.Locks.find())
+
+@app.route('insert_lock', methods=['POST'])
+def insert_lock():
+    lock = mongo.db.Locks
+    lock.insert_one(request.form.to_dict())
+    return redirect(url_for('/index'))
 
 # if statement with the app.run method.
     if __name__ == '__main__':

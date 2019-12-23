@@ -1,36 +1,59 @@
 {% extends 'base.html' %} {% block content %}
 
- <h3>Add lock review</h3>
+ <h3>Contribute to lock database</h3>
+ 
   <div class="row">
-     <form action= "" method="POST" class="col s12">
+     <form action= "{{url_for('insert_lock')}}" method="POST" class="col s12">
+         <div>
+              <div class="input-field col s12">
+                    <select>
+                          <option value="" disabled selected>Add Lock Review</option>
+                          {% for lock in locks %}
+                          <option value="{{Locks.Brand}}">{{Locks.Brand}}</option>
+                          <option value="{{Locks.Description}}">{{Locks.Description}}</option>
+                          <option value="{{Locks.Pros}}">{{Locks.Pros}}</option>
+                          <option value="{{Locks.Cons}}">{{Locks.Cons}}</option>
+                          {% endfor %}
+                    </select>
+                         <label>Input options</label>
+                 </div>
+         
+         </div>
          <div class="row">
                 <div class="input-field col s12">
-                     <i class="material-icons prefix">account_circle</i>
+                     <i class="material-icons prefix">business</i>
                      <input id="icon_userName" name= "Brand" type="text" class="validate">
-                     <label for="icon_userName">Your Name</label>
+                     <label for="icon_userName">Lock manufacturer</label>
                 </div>
          </div>
          <div class="row">   
                  <div class="input-field col s12">
                      <i class="material-icons prefix">lock</i>
                      <input id="icon_lock" name= "Description" type="text" class="validate">
-                      <label for="icon_lock">Lock type and model</label>
+                      <label for="icon_lock">Lock Description</label>
                 </div>
          </div>
          <div class="row">
                  <div class="input-field col s12">
                      <i class="material-icons prefix">mood</i>
                       <input id="icon_lock" name= "Pros" type="text" class="validate">
-                      <label for="icon_lock">Lock type and model</label>
+                      <label for="icon_lock">Good lock features</label>
                 </div>
          </div>
          <div class="row">
                  <div class="input-field col s12">
                      <i class="material-icons prefix">mood_bad</i>
                       <input id="icon_lock" name= "Cons" type="text" class="validate">
-                     <label for="icon_lock">Lock type and model</label>
+                     <label for="icon_lock">Bad lock features</label>
                 </div>
-          </div>  
+          </div>
+          <div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Update!
+                     <i class="material-icons right">loupe</i>
+                </button> 
+          
+          </div>
+             
       </form>
   </div>
 {% endblock %}
