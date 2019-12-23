@@ -30,8 +30,10 @@ def index():
     return render_template('index.html', locks=context)
 
 # This code looks for the reviews page and returns reviews.html.
-@app.route('/add_review')
-def add_review():
+@app.route('/add_review', methods=['GET','POST'])
+def add_review(): 
+    if request.method=='POST':
+        #Grab content of form and push to database
     return render_template('add_reviews.html')
 
 # if statement with the app.run method.
