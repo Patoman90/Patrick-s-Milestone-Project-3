@@ -11,7 +11,8 @@ from bson.objectid import ObjectId
 import os
 
 # Os path if function.
-if os.path.exists("env.py"): import env
+if os.path.exists("env.py"):
+    import env
 
 # Defining app, app configuration and mongo.
 app = Flask(__name__)
@@ -33,6 +34,11 @@ def index():
 def add_review():
     if request.method == 'POST':
         # Grab content of form and push to database
+        return render_template('add_reviews.html')
+
+def read_review():
+    if request.method == 'GET':
+        # Get page with reviews from reviews page.
         return render_template('add_reviews.html')
 
 # if statement with the app.run method.
