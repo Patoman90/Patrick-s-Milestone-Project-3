@@ -20,7 +20,7 @@ app.config['MONGO_URI'] = os.environ.get("MONGO_URI")
 app.config['MONGO_DBNAME'] = 'DataCentricLocksProject'
 mongo = PyMongo(app)
 
-# This code looks for the index page and finds mongodb data under DataCentricLocksProject.Locks.
+# This code looks for the index page and finds mongodb data.
 @app.route('/')
 @app.route('/index')
 def index():
@@ -34,11 +34,6 @@ def index():
 def add_review():
     if request.method == 'POST':
         # Grab content of form and push to database
-        return render_template('add_reviews.html')
-
-def read_review():
-    if request.method == 'GET':
-        # Get page with reviews from reviews page.
         return render_template('add_reviews.html')
 
 # if statement with the app.run method.
