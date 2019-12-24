@@ -10,9 +10,6 @@ from bson.objectid import ObjectId
 # Importing the Operating System.
 import os
 
-# Os path if function.
-if os.path.exists("env.py"):
-    import env
 
 # Defining app, app configuration and mongo.
 app = Flask(__name__)
@@ -62,6 +59,12 @@ def update_lock(lock_id):
            'Lock.Cons': request.form.get('Locks.Cons')
         }
     )
+    return redirect(url_for('/index.html'))
+
+
+@app.route('/delete_lock/<lock_id>')
+def delete_lock(lock_id):
+    mongo.db.locks.remove({'_id': ObjectId(lock_id)})
     return redirect(url_for('/index.html'))
 
 # if statement with the app.run method.
