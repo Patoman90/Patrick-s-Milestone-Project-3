@@ -41,6 +41,10 @@ def insert_lock():
     lock.insert_one(request.form.to_dict())
     return redirect(url_for('/index'))
 
+@app.route('/edit_lock/<Locks_id>')
+def edit_lock(lock_id):
+
+
 
 # if statement with the app.run method.
 if __name__ == '__main__':
