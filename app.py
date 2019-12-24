@@ -1,3 +1,4 @@
+
 # importing the flask library requirements.
 from flask import Flask, render_template, redirect, request, url_for
 
@@ -26,7 +27,6 @@ mongo = PyMongo(app)
 def index():
     context = mongo.db.Locks.find()
     print(context)
-
     return render_template('index.html', locks=context)
 
 # This code adds a lock to the database.
@@ -36,7 +36,7 @@ def add_lock():
         # Grab content of form and push to database
         return render_template('add_lock.html', input_options=mongo.db.Locks.find())
 
-@app.route('insert_lock', methods=['POST'])
+ @app.route('/insert_lock', methods=['POST'])
 def insert_lock():
     lock = mongo.db.Locks
     lock.insert_one(request.form.to_dict())
