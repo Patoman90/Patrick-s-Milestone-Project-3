@@ -10,8 +10,8 @@
                      <div class="collapsible-header">
                             <div class="col s3">
                                   <i class="material-icons">low_priority</i>
-                                  <a class="waves-effect waves-light btn btn_small"><i class="material-icons left">add</i>Create</a>
-                                  <a class="waves-effect waves-light btn btn_small"><i class="material-icons left">edit</i>Edit</a>
+                                  <a href= "{{url_for('insert_lock', lock_id=lock._id)}}" class="waves-effect waves-light btn btn_small"><i class="material-icons left">add</i>Create</a>
+                                  <a href= "{{url_for('edit_lock', lock_id=lock._id)}}" class="waves-effect waves-light btn btn_small"><i class="material-icons left">edit</i>Edit</a>
                             </div>
                             <div class="header col s9">
                                      <strong>{{ lock.Brand }}</strong>  - {{ lock.Description }}

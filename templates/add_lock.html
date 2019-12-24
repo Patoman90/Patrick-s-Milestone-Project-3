@@ -1,13 +1,13 @@
 {% extends 'base.html' %} {% block content %}
 
- <h3>Contribute to lock database</h3>
+ <h3>Add lock to database</h3>
  
   <div class="row">
      <form action= "{{url_for('insert_lock')}}" method="POST" class="col s12">
          <div>
               <div class="input-field col s12">
                     <select>
-                          <option value="" disabled selected>Add Lock Review</option>
+                          <option value="" disabled selected>Add Lock data</option>
                           {% for lock in locks %}
                           <option value="{{Locks.Brand}}">{{Locks.Brand}}</option>
                           <option value="{{Locks.Description}}">{{Locks.Description}}</option>
