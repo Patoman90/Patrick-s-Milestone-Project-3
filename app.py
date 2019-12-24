@@ -50,6 +50,20 @@ def edit_lock(lock_id):
     return render_template('edit_lock.html', lock=the_lock, locks=all_locks)
 
 
+@app.route('/update_lock/<lock_id>', methods=["POST"])
+def update_lock(lock_id):
+    locks = mongo.db.Locks
+    locks.update(
+        {'_id': ObjectId(lock_id)},
+        {
+           'lock.Brand': request.form.get('Locks.Brand'),
+           'Lock.Description': request.form.get('Locks.Description'),
+           'Lock.Pros': request.form.get('Locks.Pros'),
+           'Lock.Cons': request.form.get('Locks.Cons')
+        }
+    )
+    return redirect(url_for('/index.html'))
+
 # if statement with the app.run method.
     if __name__ == '__main__':
 
