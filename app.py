@@ -10,10 +10,6 @@ from bson.objectid import ObjectId
 # Importing the Operating System.
 import os
 
-# Os path if function.
-if os.path.exists("env.py"):
-    import env
-
 # Defining app, app configuration and mongo.
 app = Flask(__name__)
 app.config['MONGO_URI'] = os.environ.get("MONGO_URI")
