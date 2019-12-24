@@ -14,10 +14,11 @@
 
 # Technologies used:
 Html5,CSS3,Javascript,Jquery,Python3,Heroku,MongoDB Atlas,
-Materialize,
+Materialize,Gitpod,Github.
 
 # Testing
-
+I constantly tested my code online through running it on heroku and via the gitpod CLI. I kept testing the code and debugging it until I 
+corrected the code so that it ran properly and all connections were correct.
 # Defensive Programming
 
 # 
