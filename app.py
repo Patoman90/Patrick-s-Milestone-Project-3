@@ -41,9 +41,12 @@ def insert_lock():
     lock.insert_one(request.form.to_dict())
     return redirect(url_for('/index'))
 
+
 # if statement with the app.run method.
-    if __name__ == '__main__':
-       app.run(host='0.0.0.0',
+if __name__ == '__main__':
+
+    app.run(host='0.0.0.0',
             port=(os.environ.get('PORT')),
             debug=True)
+
 
