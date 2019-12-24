@@ -35,7 +35,7 @@ def add_lock():
         # Grab content of form and push to database
         return render_template('add_lock.html')
 
- @app.route('/insert_lock', methods=['POST'])
+@app.route('/insert_lock', methods=['POST'])
 def insert_lock():
     lock = mongo.db.Locks
     lock.insert_one(request.form.to_dict())
@@ -43,7 +43,7 @@ def insert_lock():
 
 # if statement with the app.run method.
     if __name__ == '__main__':
-    app.run(host='0.0.0.0',
+       app.run(host='0.0.0.0',
             port=(os.environ.get('PORT')),
             debug=True)
 
