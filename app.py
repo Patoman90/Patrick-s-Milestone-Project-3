@@ -43,11 +43,11 @@ def insert_lock():
     return redirect(url_for('/index'))
 
 
-@app.route('/edit_lock/<locks_id>')
+@app.route('/edit_lock/<Locks_id>')
 def edit_lock(lock_id):
     the_lock = mongo.db.locks.find_one({'_id': ObjectId(lock_id)})
     all_locks = mongo.db.locks.find()
-    return render_template('editlock.html', lock=the_lock, locks=all_locks)
+    return render_template('edit_lock.html', lock=the_lock, locks=all_locks)
 
 
 # if statement with the app.run method.
