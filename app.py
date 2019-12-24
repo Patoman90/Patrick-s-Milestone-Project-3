@@ -1,4 +1,3 @@
-
 # importing the flask library requirements.
 from flask import Flask, render_template, redirect, request, url_for
 
@@ -30,11 +29,11 @@ def index():
     return render_template('index.html', locks=context)
 
 # This code adds a lock to the database.
-@app.route('/add_lock', methods=['POST'], )
+@app.route('/add_lock', methods=['GET','POST'])
 def add_lock():
     if request.method == 'POST':
         # Grab content of form and push to database
-        return render_template('add_lock.html', input_options=mongo.db.Locks.find())
+        return render_template('add_lock.html')
 
  @app.route('/insert_lock', methods=['POST'])
 def insert_lock():
@@ -44,6 +43,7 @@ def insert_lock():
 
 # if statement with the app.run method.
     if __name__ == '__main__':
-        app.run(host=os.environ.get('IP'),
-                port=int(os.environ.get('PORT')),
-                debug=True)
+    app.run(host='0.0.0.0',
+            port=(os.environ.get('PORT')),
+            debug=True)
+
