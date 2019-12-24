@@ -8,10 +8,30 @@
                     <select>
                           <option value="" disabled selected>Edit Lock data</option>
                           {% for lock in locks %}
-                          <option value="{{Locks.Brand}}">{{Locks.Brand}}</option>
-                          <option value="{{Locks.Description}}">{{Locks.Description}}</option>
-                          <option value="{{Locks.Pros}}">{{Locks.Pros}}</option>
-                          <option value="{{Locks.Cons}}">{{Locks.Cons}}</option>
+                             {% if Locks.Brand == Lock.Brand %}
+                                   <option value="{{Lock.Brand}}" selected >{{Lock.Brand}}</option>
+                             {% else %}
+                                   <option value="{{Lock.Brand}}">{{Lock.Brand}}</option>
+                             {% endif %}
+
+                             {% if Locks.Description == Lock.Description %}
+                                   <option value="{{Lock.Description}}" selected>{{Lock.Description}}</option>
+                             {% else %}
+                                   <option value="{{Lock.Description}}">{{Lock.Description}}</option>
+                             {% endif %}
+
+                             {% if Locks.Pros == Lock.Pro %}
+                                   <option value="{{Lock.Pros}}" selected>{{Lock.Pro}}</option>
+                             {% else %}
+                                   <option value="{{Lock.Pros}}">{{Lock.Pro}}</option>
+                             {% endif %}
+                              
+                              {% if Locks.Cons == Locks.Con %}
+                                   <option value="{{Lock.Cons}}" selected>{{Locks.Con}}</option>
+                             {% else %}
+                                   <option value="{{Lock.Cons}}">{{Locks.Con}}</option>
+                             {% endif %}
+                              
                           {% endfor %}
                     </select>
                          <label>Input options</label>
@@ -21,29 +41,29 @@
          <div class="row">
                 <div class="input-field col s12">
                      <i class="material-icons prefix">business</i>
-                     <input id="icon_userName" name= "Brand" type="text" class="validate">
-                     <label for="icon_userName">Lock manufacturer</label>
+                     <input id="icon_brandName" name= "Brand" type="text" class="validate" value="{{Lock.Brand}}">
+                     <label for="icon_brandName">Lock manufacturer</label>
                 </div>
          </div>
          <div class="row">   
                  <div class="input-field col s12">
                      <i class="material-icons prefix">lock</i>
-                     <input id="icon_lock" name= "Description" type="text" class="validate">
-                      <label for="icon_lock">Lock Description</label>
+                     <textarea id="icon_describe" name= "lock_description" class="materialize-textarea">{{Lock.Description}}</textarea>
+                      <label for="icon_describe">Lock Description</label>
                 </div>
          </div>
          <div class="row">
                  <div class="input-field col s12">
                      <i class="material-icons prefix">mood</i>
-                      <input id="icon_lock" name= "Pros" type="text" class="validate">
-                      <label for="icon_lock">Good lock features</label>
+                      <input id="icon_good" name= "Pros" type="text" class="validate" value="Lock.Pros">
+                      <label for="icon_good">Good lock features</label>
                 </div>
          </div>
          <div class="row">
                  <div class="input-field col s12">
                      <i class="material-icons prefix">mood_bad</i>
-                      <input id="icon_lock" name= "Cons" type="text" class="validate">
-                     <label for="icon_lock">Bad lock features</label>
+                      <input id="icon_bad" name= "Cons" type="text" class="validate" value="Lock.Cons">
+                     <label for="icon_bad">Bad lock features</label>
                 </div>
           </div>
           <div>
@@ -55,4 +75,5 @@
              
       </form>
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 {% endblock %}

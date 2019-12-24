@@ -22,29 +22,29 @@
          <div class="row">
                 <div class="input-field col s12">
                      <i class="material-icons prefix">business</i>
-                     <input id="icon_userName" name= "Brand" type="text" class="validate">
-                     <label for="icon_userName">Lock manufacturer</label>
+                     <input id="icon_brandName" name= "Brand" type="text" class="validate">
+                     <label for="icon_brandName">Lock manufacturer</label>
                 </div>
          </div>
          <div class="row">   
                  <div class="input-field col s12">
                      <i class="material-icons prefix">lock</i>
-                     <input id="icon_lock" name= "Description" type="text" class="validate">
-                      <label for="icon_lock">Lock Description</label>
+                     <textarea id="icon_describe" name= "lock_description" class="materialize-textarea"></textarea>
+                      <label for="icon_describe">Lock Description</label>
                 </div>
          </div>
          <div class="row">
                  <div class="input-field col s12">
                      <i class="material-icons prefix">mood</i>
-                      <input id="icon_lock" name= "Pros" type="text" class="validate">
-                      <label for="icon_lock">Good lock features</label>
+                      <input id="icon_good" name= "Pros" type="text" class="validate">
+                      <label for="icon_good">Good lock features</label>
                 </div>
          </div>
          <div class="row">
                  <div class="input-field col s12">
                      <i class="material-icons prefix">mood_bad</i>
-                      <input id="icon_lock" name= "Cons" type="text" class="validate">
-                     <label for="icon_lock">Bad lock features</label>
+                      <input id="icon_bad" name= "Cons" type="text" class="validate">
+                     <label for="icon_bad">Bad lock features</label>
                 </div>
           </div>
           <div>
@@ -56,4 +56,5 @@
              
       </form>
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 {% endblock %}
