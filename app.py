@@ -29,17 +29,19 @@ def index():
     return render_template('index.html', locks=context)
 
 # This code adds a lock to the database.
-@app.route('/add_lock', methods=['GET','POST'])
+@app.route('/add_lock', methods=['GET', 'POST'])
 def add_lock():
     if request.method == 'POST':
         # Grab content of form and push to database
         return render_template('add_lock.html')
+
 
 @app.route('/insert_lock', methods=['POST'])
 def insert_lock():
     lock = mongo.db.Locks
     lock.insert_one(request.form.to_dict())
     return redirect(url_for('/index'))
+
 
 @app.route('/edit_lock/<Locks_id>')
 def edit_lock(lock_id):
@@ -48,12 +50,9 @@ def edit_lock(lock_id):
     return render_template('editlock.html', lock=the_lock, locks=all_locks)
 
 
-
 # if statement with the app.run method.
     if __name__ == '__main__':
 
         app.run(host='0.0.0.0',
                 port=(os.environ.get('PORT')),
                 debug=True)
-
-
