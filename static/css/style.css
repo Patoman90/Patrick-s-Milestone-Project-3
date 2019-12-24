@@ -1,1 +1,12 @@
-body{background-color:yellow; }
+.btn_small{
+    height: 24px;
+    width: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.header{
+    margin: 5px;
+}

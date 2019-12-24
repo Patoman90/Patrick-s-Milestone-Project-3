@@ -11,24 +11,31 @@
 
 </head>
 <body>
-<header>Data centric project</header>
-<div>
-    <button>
-       <nav>
-            <div class="nav-button">
-                <ul>
-                   <li><a href="index.html">Locks</a></li>
-                   <li><a href="add_lock.html">Add Lock</a></li>
-                </ul>
-           </div>
-       </nav>
-    </button>
-</div>
-<h1>Security Products and Reviews.</h1>
-    {% block content %}
+  <div>
+     <header>Data centric project</header>
+  </div>
+  <div>
+       <button>
+            <nav>
+                <div class="nav-button">
+                    <ul>
+                        <li><a href="index.html">Locks</a></li>
+                        <li><a href="add_lock.html">Add Lock</a></li>
+                    </ul>
+                </div>
+            </nav>
+      </button>
+  </div>
+    <h1>Security Products and Reviews.</h1>
+    <div class="container">
+        {% block content %}
 
-    {% endblock %}
-<footer>Made by Patrick Trollip 2019</footer>
+        {% endblock %}
+    </div>
+    <div>
+        <footer>Made by Patrick Trollip 2019</footer>
+    </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript">
