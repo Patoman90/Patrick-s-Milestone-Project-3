@@ -10,6 +10,10 @@ from bson.objectid import ObjectId
 # Importing the Operating System.
 import os
 
+# Os path if function.
+if os.path.exists("env.py"):
+    import env
+
 # Defining app, app configuration and mongo.
 app = Flask(__name__)
 app.config['MONGO_URI'] = os.environ.get("MONGO_URI")
@@ -39,7 +43,7 @@ def insert_lock():
     return redirect(url_for('/index'))
 
 
-@app.route('/edit_lock/<Locks_id>')
+@app.route('/edit_lock/<locks_id>')
 def edit_lock(lock_id):
     the_lock = mongo.db.locks.find_one({'_id': ObjectId(lock_id)})
     all_locks = mongo.db.locks.find()
