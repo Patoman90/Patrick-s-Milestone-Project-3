@@ -1,52 +1,80 @@
 /*----------Buttons------------------------------- */
 
 /*-------Navbar Buttons---------------------------------- */
+button{
+  
+  padding:0px;
+     border:0px;
+}
+
 #home_button{
-color:silver;
+   
+   width:100%;
+     background-color:#94b8b8;
+  
 }
 
 #add_button{
-color:greenyellow;
+   width:100%;
+     background-color:#c2d6d6;
 }
 
 #edit_button{
-color:blue;
+   width:100%;
+     background-color:#94b8b8;
 }
 
 #delete_button{
-color:red;
+  width:100%;
+  
+     background-color:#c2d6d6;
 }
 
 #data_button{
-color:plum;
+  width:100%;
+ 
+     background-color:#94b8b8;
 }
 /* -----------Option Buttons--------------------------------- */
 .btn_small{
     height: 24px;
-    width: 60px;
-    line-height: 24px;
-    margin: 5px 5px;
+        width: 60px;
+            line-height: 24px;
+         margin: 5px 5px;
     padding: 0 0.5em;
 }
 
 
  /*-------------Body elements------------------------------- */
 body{
-    background-color: wheat ;
+    background-color:grey;
+        padding:20px;
 }
-
+/*-------------H2 & H3------------------------------- */
+h1{
+  text-align:center;
+    font-family:sans;
+}
+h2{
+  text-align:center;
+    font-family:sans;
+}
+h3{
+  text-align:center;
+    font-family:sans;
+}
  /*-------------------Footer-------------- */
 
  footer{
-      color:whitesmoke;
-      margin-bottom: 5px;
-      align-content: center ;
+      color:black;
+        margin-bottom: 5px;
+      text-align: center ;
 }
 
 
  /*--------------Header---------------------*/
-.header{
-    align-content: center ;
-    color:whitesmoke;
+header{
+    text-align: center ;
+        color:black;
     margin-top: 5px;
 }
