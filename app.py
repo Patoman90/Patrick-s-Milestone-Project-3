@@ -14,11 +14,13 @@ import os
 if os.path.exists("env.py"):
     import env
 
+
 # Defining app, app configuration and mongo.
 app = Flask(__name__)
 app.config['MONGO_URI'] = os.environ.get("MONGO_URI")
 app.config['MONGO_DBNAME'] = 'DataCentricLocksProject'
 mongo = PyMongo(app)
+
 
 # This code looks for the index page and finds mongodb data.
 @app.route('/')
@@ -28,14 +30,15 @@ def index():
     print(context)
     return render_template('index.html', locks=context)
 
-# This code adds a lock to the database.
+
+# This code adds a lock and render add lock page.
 @app.route('/add_lock', methods=['GET', 'POST'])
 def add_lock():
     if request.method == 'POST':
-        # Grab content of form and push to database
         return render_template('add_lock.html')
 
 
+# Delete lock in database
 @app.route('/insert_lock', methods=['POST'])
 def insert_lock():
     lock = mongo.db.Locks
@@ -43,6 +46,7 @@ def insert_lock():
     return redirect(url_for('/index'))
 
 
+# Edit lock in database
 @app.route('/edit_lock/<Locks_id>')
 def edit_lock(lock_id):
     the_lock = mongo.db.locks.find_one({'_id': ObjectId(lock_id)})
@@ -50,6 +54,7 @@ def edit_lock(lock_id):
     return render_template('edit_lock.html', lock=the_lock, locks=all_locks)
 
 
+# Update lock in database and redirect to index page
 @app.route('/update_lock/<lock_id>', methods=["POST"])
 def update_lock(lock_id):
     locks = mongo.db.Locks
@@ -65,10 +70,26 @@ def update_lock(lock_id):
     return redirect(url_for('/index.html'))
 
 
+# Remove lock in database and render index page
 @app.route('/delete_lock/<lock_id>')
 def delete_lock(lock_id):
     mongo.db.locks.remove({'_id': ObjectId(lock_id)})
     return redirect(url_for('/index.html'))
+
+
+# Find lock in database and render list of locks
+@app.route('/get_lock')
+def get_lock():
+    return render_template('lock_list.html',
+                           Lock=mongo.db.Locks.find())
+
+
+# Edit lock in and render edit database page
+@app.route('/edit_data/<lock_id>')
+def edit_data(lock_id):
+    return render_template('edit_lock.html',
+                           Lock=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
+
 
 # if statement with the app.run method.
     if __name__ == '__main__':

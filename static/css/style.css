@@ -1,3 +1,26 @@
+/*----------Buttons------------------------------- */
+
+/*-------Navbar Buttons---------------------------------- */
+#home_button{
+color:silver;
+}
+
+#add_button{
+color:greenyellow;
+}
+
+#edit_button{
+color:blue;
+}
+
+#delete_button{
+color:red;
+}
+
+#data_button{
+color:plum;
+}
+/* -----------Option Buttons--------------------------------- */
 .btn_small{
     height: 24px;
     width: 60px;
@@ -6,6 +29,24 @@
     padding: 0 0.5em;
 }
 
+
+ /*-------------Body elements------------------------------- */
+body{
+    background-color: wheat ;
+}
+
+ /*-------------------Footer-------------- */
+
+ footer{
+      color:whitesmoke;
+      margin-bottom: 5px;
+      align-content: center ;
+}
+
+
+ /*--------------Header---------------------*/
 .header{
+    align-content: center ;
+    color:whitesmoke;
     margin-top: 5px;
 }
