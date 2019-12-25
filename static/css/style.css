@@ -4,70 +4,77 @@
 button{
   
   padding:0px;
-     border:0px;
+  border:0px;
 }
 
 #home_button{
-   
    width:100%;
-     background-color:#94b8b8;
+   width:100%;
+   background-color:#94b8b8;
   
 }
 
 #add_button{
    width:100%;
-     background-color:#c2d6d6;
+   background-color:#c2d6d6;
 }
 
 #edit_button{
    width:100%;
-     background-color:#94b8b8;
+   background-color:#94b8b8;
 }
 
 #delete_button{
   width:100%;
   
-     background-color:#c2d6d6;
+   background-color:#c2d6d6;
 }
 
 #data_button{
   width:100%;
  
-     background-color:#94b8b8;
+    background-color:#94b8b8;
 }
 /* -----------Option Buttons--------------------------------- */
 .btn_small{
     height: 24px;
-        width: 60px;
-            line-height: 24px;
-         margin: 5px 5px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
     padding: 0 0.5em;
 }
 
 
  /*-------------Body elements------------------------------- */
+
+
 body{
+    
     background-color:grey;
-        padding:20px;
+    padding:20px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OmIeWJcyI-C_Dl3TjFY1OgHaHa%26pid%3DApi&f=1");
+  
 }
+
 /*-------------H2 & H3------------------------------- */
 h1{
   text-align:center;
-    font-family:sans;
+  font-family:sans;
+  color:white;
 }
 h2{
   text-align:center;
-    font-family:sans;
+  color:white;
 }
 h3{
   text-align:center;
-    font-family:sans;
+  color:white;
 }
  /*-------------------Footer-------------- */
 
  footer{
-      color:black;
-        margin-bottom: 5px;
+      color:white;
+      margin-bottom: 5px;
       text-align: center ;
 }
 
@@ -75,6 +82,6 @@ h3{
  /*--------------Header---------------------*/
 header{
     text-align: center ;
-        color:black;
+    color:white;
     margin-top: 5px;
 }
