@@ -36,6 +36,7 @@ def index():
 def add_lock():
     if request.method == 'POST':
         return render_template('add_lock.html')
+    return render_template('add_lock.html')
 
 
 # Create lock in database

@@ -8,11 +8,11 @@
              {% for lock in locks %}
                 <li>
                      <div class="collapsible-header">
-                            <a href="{{url_for('insert_data', lock_id=locks._id)}}" class="waves-effect waves-light btn btn_small green">Create</a>
-                            <a href="{{url_for('edit_data', lock_id=locks._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
+                            <a href="{{url_for('insert_data', lock_id=lock._id)}}" class="waves-effect waves-light btn btn_small green">Create</a>
+                            <a href="{{url_for('edit_data', lock_id=lock._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
 
                             <div class="task_header">
-                                <strong>{{ locks.Brand }}</strong>  - {{ locks.Description }}
+                                <strong>{{ lock.Brand }}</strong>  - {{ lock.Description }}
                             </div>
                      </div>
                 </li>
