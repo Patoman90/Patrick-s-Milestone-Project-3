@@ -27,7 +27,7 @@ mongo = PyMongo(app)
 @app.route('/index')
 def index():
     context = mongo.db.Locks.find()
-    print(context)
+    print(context.__dict__)
     return render_template('index.html', locks=context)
 
 
