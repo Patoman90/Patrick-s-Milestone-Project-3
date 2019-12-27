@@ -88,7 +88,7 @@ def get_lock():
 # Get lock details
 @app.route('/get_single_lock/<lock_id>')
 def get_single_lock(lock_id):
-    return render_template('lock_list.html',
+    return render_template('lock_detail.html',
                            locks=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
 
 
