@@ -7,29 +7,25 @@
               <div class="input-field col s12">
                     <select>
                           <option value="" disabled selected>Edit Lock data</option>
-                          {% for lock in locks %}
+                          {% for Lock in locks %}
                              {% if Locks.Brand == Lock.Brand %}
                                    <option value="{{Lock.Brand}}" selected >{{Lock.Brand}}</option>
-                             {% else %}
-                                   <option value="{{Lock.Brand}}">{{Lock.Brand}}</option>
+                             
                              {% endif %}
 
                              {% if Locks.Description == Lock.Description %}
                                    <option value="{{Lock.Description}}" selected>{{Lock.Description}}</option>
-                             {% else %}
-                                   <option value="{{Lock.Description}}">{{Lock.Description}}</option>
+                             
                              {% endif %}
 
                              {% if Locks.Pros == Lock.Pro %}
                                    <option value="{{Lock.Pros}}" selected>{{Lock.Pro}}</option>
-                             {% else %}
-                                   <option value="{{Lock.Pros}}">{{Lock.Pro}}</option>
+                             {
                              {% endif %}
                               
                               {% if Locks.Cons == Locks.Con %}
                                    <option value="{{Lock.Cons}}" selected>{{Locks.Con}}</option>
-                             {% else %}
-                                   <option value="{{Lock.Cons}}">{{Locks.Con}}</option>
+                             
                              {% endif %}
                               
                           {% endfor %}
@@ -41,7 +37,7 @@
          <div class="row">
                 <div class="input-field col s12">
                      <i class="material-icons prefix">business</i>
-                     <input id="icon_brandName" name= "Brand" type="text" class="validate" value="{{Lock.Brand}}">
+                     <input id="icon_brandName" name= "Brand" type="text" class="validate" value="{{lock.Brand}}">
                      <label for="icon_brandName">Lock manufacturer</label>
                 </div>
          </div>
