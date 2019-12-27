@@ -38,7 +38,7 @@ def add_lock():
         return render_template('add_lock.html')
 
 
-# Delete lock in database
+# Create lock in database
 @app.route('/insert_lock', methods=['POST'])
 def insert_lock():
     lock = mongo.db.Locks
