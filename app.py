@@ -85,7 +85,6 @@ def get_lock():
                            locks=mongo.db.Locks.find())
 
 
-
 # Get lock details
 @app.route('/get_single_lock/<lock_id>')
 def get_single_lock():
