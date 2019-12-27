@@ -85,6 +85,14 @@ def get_lock():
                            locks=mongo.db.Locks.find())
 
 
+
+# Get lock details
+@app.route('/get_single_lock/<lock_id>')
+def get_single_lock():
+    return render_template('lock_list.html',
+                           locks=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
+
+
 # Edit lock in and render edit database page
 @app.route('/edit_data/<lock_id>')
 def edit_data(lock_id):
