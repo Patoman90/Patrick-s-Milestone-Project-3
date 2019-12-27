@@ -47,7 +47,7 @@ def insert_lock():
 
 
 # Edit lock in database
-@app.route('/edit_lock/<Locks_id>')
+@app.route('/edit_lock/<lock_id>')
 def edit_lock(lock_id):
     the_lock = mongo.db.locks.find_one({'_id': ObjectId(lock_id)})
     all_locks = mongo.db.locks.find()
