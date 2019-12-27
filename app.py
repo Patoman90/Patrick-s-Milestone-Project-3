@@ -81,14 +81,14 @@ def delete_lock(lock_id):
 @app.route('/get_lock')
 def get_lock():
     return render_template('lock_list.html',
-                           Lock=mongo.db.Locks.find())
+                           locks=mongo.db.Locks.find())
 
 
 # Edit lock in and render edit database page
 @app.route('/edit_data/<lock_id>')
 def edit_data(lock_id):
     return render_template('edit_lock.html',
-                           Lock=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
+                           locks=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
 
 
 # if statement with the app.run method.
