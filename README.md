@@ -3,7 +3,7 @@
     Project name: Security products and reviews.
 
 #Deployment:
-    Link to the website is : 
+    Link to the website is : https://locks-data-centric.herokuapp.com/
 
 # Aims and Objectives:
     The aim of this Project is to meet the requirements of the milestone project and try use C.R.U.D(Create,Read,Update and Delete) to develop a website that 
@@ -51,3 +51,6 @@
     Cloud application platform Heroku = https://www.heroku.com
 
     DeploymentDeploymentMongoDataBase = https://cloud.mongodb.com
+
+    Image I borowed = https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OmIeWJcyI-C_Dl3TjFY1OgHaHa%26pid%3DApi&f=1
+
