@@ -35,6 +35,8 @@ def index():
 @app.route('/add_lock', methods=['GET', 'POST'])
 def add_lock():
     if request.method == 'POST':
+        lock = mongo.db.Locks
+        lock.insert_many(request.form.to_dict())
         return render_template('add_lock.html')
     return render_template('add_lock.html', lock=the_lock, locks=all_locks)
 
@@ -74,7 +76,7 @@ def update_lock(lock_id):
 # Remove lock in database and render index page
 @app.route('/delete_lock/<lock_id>')
 def delete_lock(lock_id):
-    mongo.db.locks.delete_one({'_id': ObjectId(lock_id)})
+    mongo.db.locks.delete_many({'_id': ObjectId(lock_id)})
     return redirect(url_for('index'))
 
 
