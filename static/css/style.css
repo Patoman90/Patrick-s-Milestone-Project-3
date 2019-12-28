@@ -27,10 +27,9 @@ button{
     padding: 0 0.5em;
 }
 
-#collapsable-color{
-    color:red;
-    
-}
+ul{color:black;}
+
+li{color:red;}
 
  /*-------------Body elements------------------------------- */
 
