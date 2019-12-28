@@ -68,7 +68,7 @@ def update_lock(lock_id):
            'lock_Cons': request.form.get('lock_Cons')
         }
     )
-    return redirect(url_for('/index.html'))
+    return redirect(url_for('index'))
 
 
 # Remove lock in database and render index page
