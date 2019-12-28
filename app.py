@@ -74,7 +74,7 @@ def update_lock(lock_id):
 # Remove lock in database and render index page
 @app.route('/delete_lock/<lock_id>')
 def delete_lock(lock_id):
-    mongo.db.locks.remove_one({'_id': ObjectId(lock_id)})
+    mongo.db.locks.delete_one({'_id': ObjectId(lock_id)})
     return redirect(url_for('index'))
 
 
