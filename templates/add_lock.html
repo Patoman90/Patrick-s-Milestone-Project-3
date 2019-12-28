@@ -9,10 +9,10 @@
                     <select>
                           <option value="" disabled selected>Add Lock data</option>
                           {% for lock in locks %}
-                          <option value="{{Lock.Brand}}">{{Locks.Brand}}</option>
-                          <option value="{{Lock.Description}}">{{Locks.Description}}</option>
-                          <option value="{{Lock.Pros}}">{{Locks.Pros}}</option>
-                          <option value="{{Lock.Cons}}">{{Locks.Cons}}</option>
+                          <option value="{{lock.Brand}}">{{locks.Brand}}</option>
+                          <option value="{{lock.Description}}">{{locks.Description}}</option>
+                          <option value="{{lock.Pros}}">{{locks.Pros}}</option>
+                          <option value="{{lock.Cons}}">{{locks.Cons}}</option>
                           {% endfor %}
                     </select>
                          <label>Input options</label>
@@ -48,7 +48,7 @@
                 </div>
           </div>
           <div>
-                <button class="btn waves-effect waves-light" action= "{{url_for('update_lock', lock_id=lock._id)}}" method="POST" type="submit" name="action">Update!
+                <button class="btn waves-effect waves-light" action= "{{url_for('add_lock', lock_id=lock._id)}}" method="POST" type="submit" name="action">Update!
                      <i class="material-icons right">loupe</i>
                 </button> 
           
