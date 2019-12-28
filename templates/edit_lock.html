@@ -7,24 +7,24 @@
               <div class="input-field col s12">
                     <select>
                           <option value="" disabled selected>Edit Lock data</option>
-                          {% for Lock in locks %}
-                             {% if Locks.Brand == Lock.Brand %}
-                                   <option value="{{Lock.Brand}}" selected >{{Lock.Brand}}</option>
+                          {% for lock in locks %}
+                             {% if locks.Brand == lock.Brand %}
+                                   <option value="{{lock.Brand}}" selected >{{lock.Brand}}</option>
                              
                              {% endif %}
 
-                             {% if Locks.Description == Lock.Description %}
-                                   <option value="{{Lock.Description}}" selected>{{Lock.Description}}</option>
+                             {% if locks.Description == lock.Description %}
+                                   <option value="{{lock.Description}}" selected>{{lock.Description}}</option>
                              
                              {% endif %}
 
-                             {% if Locks.Pros == Lock.Pro %}
-                                   <option value="{{Lock.Pros}}" selected>{{Lock.Pro}}</option>
+                             {% if locks.Pros == lock.Pro %}
+                                   <option value="{{lock.Pros}}" selected>{{lock.Pro}}</option>
                              {
                              {% endif %}
                               
-                              {% if Locks.Cons == Locks.Con %}
-                                   <option value="{{Lock.Cons}}" selected>{{Locks.Con}}</option>
+                              {% if locks.Cons == lock.Con %}
+                                   <option value="{{lock.Cons}}" selected>{{locks.Con}}</option>
                              
                              {% endif %}
                               
@@ -44,7 +44,7 @@
          <div class="row">   
                  <div class="input-field col s12">
                      <i class="material-icons prefix">lock</i>
-                     <textarea id="icon_describe" name= "lock_description" class="materialize-textarea">{{Lock.Description}}</textarea>
+                     <textarea id="icon_describe" name= "lock_description" class="materialize-textarea">{{lock.Description}}</textarea>
                       <label for="icon_describe">Lock Description</label>
                 </div>
          </div>
