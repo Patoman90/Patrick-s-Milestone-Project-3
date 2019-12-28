@@ -26,15 +26,15 @@ button{
     margin: 5px 5px;
     padding: 0 0.5em;
 }
- /*-------------Text input areas and text areas------------------------------- */
-#textzone
-{
- color:grey;
 
+#collapsable-color{
+    color:red;
+    
 }
+
  /*-------------Body elements------------------------------- */
 
-
+html{color:red;}
 body{
     color:grey;
     background-color:grey;
