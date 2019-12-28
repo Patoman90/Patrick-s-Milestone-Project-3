@@ -37,13 +37,16 @@ button{
     margin: 5px 5px;
     padding: 0 0.5em;
 }
-
-
+ /*-------------Text input areas and text areas------------------------------- */
+#textzone
+{
+ color:grey;
+}
  /*-------------Body elements------------------------------- */
 
 
 body{
-    
+    color:grey;
     background-color:grey;
     padding:20px;
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OmIeWJcyI-C_Dl3TjFY1OgHaHa%26pid%3DApi&f=1");
