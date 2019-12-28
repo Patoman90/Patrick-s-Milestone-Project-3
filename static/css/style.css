@@ -33,7 +33,7 @@ li{color:red;}
 
  /*-------------Body elements------------------------------- */
 
-html{color:red;}
+
 body{
     color:grey;
     background-color:grey;
@@ -42,17 +42,7 @@ body{
   
 }
 
-ul{
-    background-color: red;
-    color:ivory;
 
-}
-
-li{
-    background-color: lightgreen;
-    color:ivory;
-    
-}
 
 
 
@@ -60,15 +50,15 @@ li{
 h1{
   text-align:center;
   font-family:sans;
-  color:white;
+  color:blue;
 }
 h2{
   text-align:center;
-  color:white;
+  color:blue;
 }
 h3{
   text-align:center;
-  color:white;
+  color:blue;
 }
  /*-------------------Footer-------------- */
 
