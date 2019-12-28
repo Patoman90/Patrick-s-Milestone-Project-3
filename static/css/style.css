@@ -53,6 +53,7 @@ body{
 textarea{
     background-image: none;
     background-color: grey;
+    resize: auto;
     }
 
 /*-------------H2 & H3------------------------------- */
