@@ -43,6 +43,18 @@ body{
   
 }
 
+ul{
+    background-color: red;
+    color:ivory;
+
+}
+
+li{
+    background-color: lightgreen;
+    color:ivory;
+    
+}
+
 
 
 /*-------------H1 - H3------------------------------- */
