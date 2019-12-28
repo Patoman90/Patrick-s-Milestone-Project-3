@@ -56,16 +56,16 @@ def edit_lock(lock_id):
 
 
 # Update lock in database and redirect to index page
+
 @app.route('/update_lock/<lock_id>', methods=["POST"])
 def update_lock(lock_id):
-    locks = mongo.db.Locks
-    locks.update(
+    mongo.db.locks.update(
         {'_id': ObjectId(lock_id)},
         {
-           'lock.Brand': request.form.get('Locks.Brand'),
-           'Lock.Description': request.form.get('Locks.Description'),
-           'Lock.Pros': request.form.get('Locks.Pros'),
-           'Lock.Cons': request.form.get('Locks.Cons')
+           'lock_Brand': request.form.get('lock_Brand'),
+           'lock_Description': request.form.get('lock_Description'),
+           'lock_Pros': request.form.get('lock_Pros'),
+           'lock_Cons': request.form.get('lock_Cons')
         }
     )
     return redirect(url_for('/index.html'))
