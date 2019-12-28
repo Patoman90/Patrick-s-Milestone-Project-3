@@ -48,7 +48,7 @@
                 </div>
           </div>
           <div>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Update!
+                <button class="btn waves-effect waves-light" action= "{{url_for('update_lock', lock_id=lock._id)}}" method="POST" type="submit" name="action">Update!
                      <i class="material-icons right">loupe</i>
                 </button> 
           
