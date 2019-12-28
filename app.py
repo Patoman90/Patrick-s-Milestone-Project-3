@@ -52,8 +52,8 @@ def insert_lock():
 # Edit lock in database
 @app.route('/edit_lock/<lock_id>')
 def edit_lock(lock_id):
-    the_lock = mongo.db.locks.find_one({'_id': ObjectId(lock_id)})
-    all_locks = mongo.db.locks.find()
+    the_lock = mongo.db.lock.find_one({'_id': ObjectId(lock_id)})
+    all_locks = mongo.db.locks.find_many()
     return render_template('edit_lock.html', lock=the_lock, locks=all_locks)
 
 
@@ -61,7 +61,7 @@ def edit_lock(lock_id):
 
 @app.route('/update_lock/<lock_id>', methods=["POST"])
 def update_lock(lock_id):
-    mongo.db.locks.update(
+    mongo.db.locks.update_many(
         {'_id': ObjectId(lock_id)},
         {
            'lock_Brand': request.form.get('lock_Brand'),
