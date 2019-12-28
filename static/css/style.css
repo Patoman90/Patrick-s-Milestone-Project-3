@@ -50,13 +50,13 @@ body{
   
 }
 
-textarea{
+.materialize-textarea{
     background-image: none;
     background-color: grey;
     resize: auto;
     }
 
-/*-------------H2 & H3------------------------------- */
+/*-------------H1 - H3------------------------------- */
 h1{
   text-align:center;
   font-family:sans;
