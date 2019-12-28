@@ -11,6 +11,12 @@
                             <div class="col s3">
                                   <i class="material-icons">low_priority</i><strong id="lock_title"> {{ lock.Brand }}</strong> 
                             </div>
+                             <div class="collapsible-body" id='textzone'>
+                                <span><i class="material-icons">info</i><p>{{ lock.Description }}</p> </span>
+                         </div>
+                        <div class="collapsible-body" id='textzone'>
+                                <span><i class="material-icons">check</i><p>{{ lock.Pros }}</p> <i class="material-icons">clear</i><p>{{ lock.Cons }} </p> </span>
+                         </div>
                      </div>
                         <div class="header col s9" id='btn_small'>
                             <a href= "{{url_for('get_single_lock', lock_id=lock._id)}}" class="waves-effect waves-light btn btn_small yellow"><i class="material-icons left">book</i>Read data</a>
@@ -18,12 +24,6 @@
                             <a href= "{{url_for('delete_lock', lock_id=lock._id)}}" class="waves-effect waves-light btn btn_small red"><i class="material-icons left">delete</i>Delete data</a>
                         </div>
                      
-                        <div class="collapsible-body" id='textzone'>
-                                <span><i class="material-icons">info</i><p>{{ lock.Description }}</p> </span>
-                         </div>
-                        <div class="collapsible-body" id='textzone'>
-                                <span><i class="material-icons">check</i><p>{{ lock.Pros }}</p> <i class="material-icons">clear</i><p>{{ lock.Cons }} </p> </span>
-                         </div>
                  </li>
         {% endfor %}
  </ul> 
