@@ -50,7 +50,7 @@ body{
   
 }
 
-#icon_description{
+textarea{
     background-image: none;
     background-color: grey;
     }
