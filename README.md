@@ -52,5 +52,5 @@
 
     DeploymentDeploymentMongoDataBase = https://cloud.mongodb.com
 
-    Image I borowed = https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.OmIeWJcyI-C_Dl3TjFY1OgHaHa%26pid%3DApi&f=1
+    Image I borowed = https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwisenetasia.com%2Fwp-content%2Fuploads%2F2016%2F09%2Fhdr-lock-dlp.png&f=1&nofb=1
 
