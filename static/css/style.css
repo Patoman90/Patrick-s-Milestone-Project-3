@@ -22,7 +22,7 @@ button{
 /* -----------Option Buttons--------------------------------- */
 .btn_small{
     height: 50px;
-    width: 100%;
+    width: 33%;
     line-height: 24px;
     margin: 5px 5px;
     padding: 0 0.5em;
