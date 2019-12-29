@@ -9,19 +9,16 @@ button{
 
 #home_button{
    width:100%;
-   background-color:#94b8b8;
+   height:70px;
+   margin:10px;
+   background-color:#2affff;
   
 }
 
-
-#data_button{
-  width:100%;
-  background-color:#94b8b8;
-}
 /* -----------Option Buttons--------------------------------- */
 .btn_small{
     height: 50px;
-    width: 30%;
+    width: 23%;
     line-height: 24px;
     margin: 5px 5px;
     padding: 5px;
