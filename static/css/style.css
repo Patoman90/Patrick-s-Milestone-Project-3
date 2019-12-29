@@ -51,6 +51,10 @@ p{
     font-weight: bold;
 }
 
+
+#add_lock_text{
+    color:red;
+}
 #textzone{
     background-color: black;
 }
