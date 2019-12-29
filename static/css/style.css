@@ -41,19 +41,13 @@ body{
 }
 
 p{
-    color:black;
+    color:whitesmoke;
 }
 
 .custom_text{
     background-color: lightskyblue;
     color: whitesmoke;
     font-weight: bold;
-}
-.material-icons{
-    background-color: lightskyblue;
-    color: whitesmoke;
-    font-weight: bold;
-
 }
 
 
@@ -86,4 +80,8 @@ header{
     text-align: center ;
     color:white;
     margin-top: 5px;
+}
+
+.customone {
+    background-color: dimgrey;
 }

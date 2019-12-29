@@ -1,20 +1,10 @@
 {% extends 'base.html'%} {% block content %}
 
- <div class="row">
-
+ <div class="row customone">
         <h3>Lock Detail</h3>
-    
-        <ul class="collapsible" data-collapsible="accordion">
-             
-                <li>
-                     <div class="collapsible-header">
-                            <div class="task_header">
-                                <strong>{{ locks.Brand }}</strong>  - {{ locks.Description }}<br>
-                            </div>
-                     </div>
-                </li>
-            
-
-      </ul>
+        <p><strong>Brand</strong>: {{ locks.brand }}</p>
+        <p><strong>Description:</strong> {{ locks.description }}</p>
+        <p><strong>Pros:</strong>{{ locks.pros }}</p>
+        <p><strong>Cons:</strong>{{ locks.cons }}</p>
  </div>
 {% endblock %}

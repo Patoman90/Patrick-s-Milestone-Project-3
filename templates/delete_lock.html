@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% block content %}
+    <h3>Delete lock from database</h3>
+    <div class="row">
+        <form action="" method="POST" class="col s12" enctype="multipart/form-data">
+            {{ form.csrf_token }}
+            <p>
+                {{ form.brand.label }}<br>
+                {{ form.brand(size=120) }}<br>
+                {% for error in form.brand.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </p>
+
+            <h2>Are you sure you want to delete this lock?</h2>
+            <p>{{ form.submit }}</p>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+{% endblock %}

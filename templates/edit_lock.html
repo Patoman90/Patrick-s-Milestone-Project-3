@@ -2,74 +2,38 @@
 <h3>Edit lock in database</h3>
  
   <div class="row">
-     <form action= "{{url_for('update_lock', lock_id=lock._id)}}" method="POST" class="col s12">
-         <div>
-              <div class="input-field col s12" id='textzone'>
-                    <select>
-                          <option value="" disabled selected>Edit Lock data</option>
-                          {% for lock in locks %}
-                             {% if locks.Brand == lock.Brand %}
-                                   <option value="{{lock.Brand}}" selected >{{lock.Brand}}</option>
-                             
-                             {% endif %}
-
-                             {% if locks.Description == lock.Description %}
-                                   <option value="{{lock.Description}}" selected>{{lock.Description}}</option>
-                             
-                             {% endif %}
-
-                             {% if locks.Pros == lock.Pro %}
-                                   <option value="{{lock.Pros}}" selected>{{lock.Pro}}</option>
-                             {
-                             {% endif %}
-                              
-                              {% if locks.Cons == lock.Con %}
-                                   <option value="{{lock.Cons}}" selected>{{locks.Con}}</option>
-                             
-                             {% endif %}
-                              
-                          {% endfor %}
-                    </select>
-                         <label>Input options</label>
-                 </div>
-         
-         </div>
-         <div class="row">
-                <div class="input-field col s12">
-                     <i class="material-icons prefix">business</i>
-                     <input id="icon_brandName" name= "Brand" type="text" class="validate" value="{{lock.Brand}}">{{lock.Brand}}
-                     <label for="icon_brandName">Lock manufacturer</label>
-                </div>
-         </div>
-         <div class="row">   
-                 <div class="input-field col s12">
-                     <i class="material-icons prefix">lock</i>
-                     <textarea id="icon_describe" name= "lock_description" class="validate" value="{{lock.Description}}">{{lock.Description}}</textarea>
-                      <label for="icon_describe">Lock Description</label>
-                </div>
-         </div>
-         <div class="row">
-                 <div class="input-field col s12">
-                     <i class="material-icons prefix">mood</i>
-                      <input id="icon_good" name= "Pros" type="text" class="validate" value="{{lock.Pros}}">{{lock.Pros}}
-                      <label for="icon_good">Good lock features</label>
-                </div>
-         </div>
-         <div class="row">
-                 <div class="input-field col s12">
-                     <i class="material-icons prefix">mood_bad</i>
-                      <input id="icon_bad" name= "Cons" type="text" class="validate" value="{{lock.Cons}}">{{lock.Cons}}
-                     <label for="icon_bad">Bad lock features</label>
-                </div>
-          </div>
-          <div>
-                <button class="btn waves-effect waves-light" action= "{{url_for('update_lock', lock_id=lock._id)}}" method="POST" type="submit" name="action">Update!
-                     <i class="material-icons right">loupe</i>
-                </button> 
-          
-          </div>
-             
-      </form>
-  </div>
+        <form action="" method="POST" class="col s12" enctype="multipart/form-data">
+            {{ form.csrf_token }}
+            <p>
+                {{ form.brand.label }}<br>
+                {{ form.brand(size=120) }}<br>
+                {% for error in form.brand.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.description.label }}<br>
+                {{ form.description(col="120", rows="5") }}<br>
+                {% for error in form.description.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.pros.label }}<br>
+                {{ form.pros(col="120", rows="5") }}<br>
+                {% for error in form.pros.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </p>
+            <p>
+                {{ form.cons.label }}<br>
+                {{ form.cons(col="120", rows="5") }}<br>
+                {% for error in form.cons.errors %}
+                    <span style="color: red;">{{ error }}</span>
+                {% endfor %}
+            </p>
+            <p>{{ form.submit }}</p>
+        </form>
+    </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 {% endblock %}
