@@ -43,6 +43,12 @@ p{
     color:whitesmoke;
 }
 
+.custom_text{
+    background-color: lightskyblue;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
 
 
 /*-------------H1 - H3------------------------------- */
