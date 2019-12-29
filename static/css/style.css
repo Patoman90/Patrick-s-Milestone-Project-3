@@ -9,55 +9,42 @@ button{
 
 #home_button{
    width:100%;
-   height:70px;
-   margin:10px;
-   background-color:#2aff95;
+   background-color:#0089ec;
   
 }
-/* -----------lock_title--------------------------------- */
-#lock_title{
-    background-color: black;
+
+
+#data_button{
+  width:100%;
+  background-color:#fafafa;
 }
 /* -----------Option Buttons--------------------------------- */
 .btn_small{
     height: 50px;
-    width: 23%;
+    width: 33%;
     line-height: 24px;
     margin: 5px 5px;
-    padding: 5px;
-    align-content: center;
-    background-color: black;
+    padding: 0 0.5em;
 }
 
+ul{color:#fafafa;}
+
+li{color:#fafafa;}
 
  /*-------------Body elements------------------------------- */
 
 
 body{
-    color:grey;
-    background-color:grey;
+    color:#fafafa;
+    background-color:rgba(0,0,0,0.87);
     padding:20px;
     background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwisenetasia.com%2Fwp-content%2Fuploads%2F2016%2F09%2Fhdr-lock-dlp.png&f=1&nofb=1");
   
 }
 
-p{
-    color:whitesmoke;
-}
-
-.custom_text{
-    
-    color: whitesmoke;
-    font-weight: bold;
-}
 
 
-#add_lock_text{
-    color:red;
-}
-#textzone{
-    background-color: black;
-}
+
 
 /*-------------H1 - H3------------------------------- */
 h1{
@@ -67,16 +54,16 @@ h1{
 }
 h2{
   text-align:center;
-  color:blue;
+  color:#b1dcfb;
 }
 h3{
   text-align:center;
-  color:blue;
+  color:#b1dcfb;
 }
  /*-------------------Footer-------------- */
 
  footer{
-      color:white;
+      color:#b1dcfb;
       margin-bottom: 5px;
       text-align: center ;
 }
@@ -85,10 +72,6 @@ h3{
  /*--------------Header---------------------*/
 header{
     text-align: center ;
-    color:white;
+    color:#b1dcfb;
     margin-top: 5px;
-}
-
-.customone {
-    background-color: dimgrey;
 }
