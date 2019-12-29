@@ -27,9 +27,6 @@ button{
     padding: 0 0.5em;
 }
 
-ul{color:black;}
-
-li{color:red;}
 
  /*-------------Body elements------------------------------- */
 
@@ -42,7 +39,9 @@ body{
   
 }
 
-
+p{
+    color:whitesmoke;
+}
 
 
 
