@@ -21,10 +21,11 @@ button{
 /* -----------Option Buttons--------------------------------- */
 .btn_small{
     height: 50px;
-    width: 33%;
+    width: 30%;
     line-height: 24px;
     margin: 5px 5px;
-    padding: 0 0.5em;
+    padding: 5px;
+    align-content: center;
 }
 
 
