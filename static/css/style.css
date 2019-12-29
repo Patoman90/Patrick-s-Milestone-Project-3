@@ -11,10 +11,13 @@ button{
    width:100%;
    height:70px;
    margin:10px;
-   background-color:#2affff;
+   background-color:#2aff95;
   
 }
-
+/* -----------lock_title--------------------------------- */
+#lock_title{
+    background-color: black;
+}
 /* -----------Option Buttons--------------------------------- */
 .btn_small{
     height: 50px;
@@ -23,6 +26,7 @@ button{
     margin: 5px 5px;
     padding: 5px;
     align-content: center;
+    background-color: black;
 }
 
 
@@ -42,12 +46,14 @@ p{
 }
 
 .custom_text{
-    background-color: lightskyblue;
+    
     color: whitesmoke;
     font-weight: bold;
 }
 
-
+#textzone{
+    background-color: black;
+}
 
 /*-------------H1 - H3------------------------------- */
 h1{

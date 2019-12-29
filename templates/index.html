@@ -7,8 +7,8 @@
  <ul class="collapsible" data-collapsable="accordion">
          {% for lock in locks %}
                  <li>
-                     <div class="collapsible-header">
-                            <div class="col s3">
+                     <div class="collapsible-header" id="lock_title">
+                            <div class="col s3" id="lock_title">
                                   <i class="material-icons">low_priority</i><span><p class = "custom_text">{{ lock.brand }}</p></span>
                             </div>
                      </div>
