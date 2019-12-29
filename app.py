@@ -90,6 +90,7 @@ def get_lock():
 # Get lock details
 @app.route('/get_single_lock/<lock_id>')
 def get_single_lock(lock_id):
+    print(lock_id)
     return render_template('lock_detail.html',
                            locks=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
 
@@ -98,7 +99,7 @@ def get_single_lock(lock_id):
 @app.route('/edit_data/<lock_id>')
 def edit_data(lock_id):
     return render_template('edit_lock.html',
-                           locks=mongo.db.locks.find_one({'_id': ObjectId(lock_id)}))
+                           locks=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
 
 
 # if statement with the app.run method.
