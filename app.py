@@ -61,7 +61,7 @@ def edit_lock(lock_id):
 
 @app.route('/update_lock/<lock_id>', methods=["POST"])
 def update_lock(lock_id):
-    mongo.db.locks.update_many(
+    mongo.db.locks.update_one(
         {'_id': ObjectId(lock_id)},
         {
            'lock_Brand': request.form.get('lock_Brand'),
@@ -76,7 +76,7 @@ def update_lock(lock_id):
 # Remove lock in database and render index page
 @app.route('/delete_lock/<lock_id>')
 def delete_lock(lock_id):
-    mongo.db.locks.delete_many({'_id': ObjectId(lock_id)})
+    mongo.db.locks.delete_one({'_id': ObjectId(lock_id)})
     return redirect(url_for('index'))
 
 
