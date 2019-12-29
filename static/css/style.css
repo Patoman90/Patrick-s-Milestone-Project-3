@@ -41,13 +41,19 @@ body{
 }
 
 p{
-    color:whitesmoke;
+    color:black;
 }
 
 .custom_text{
     background-color: lightskyblue;
     color: whitesmoke;
     font-weight: bold;
+}
+.material-icons{
+    background-color: lightskyblue;
+    color: whitesmoke;
+    font-weight: bold;
+
 }
 
 
