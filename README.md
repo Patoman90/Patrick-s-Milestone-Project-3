@@ -21,10 +21,11 @@
     I constantly tested my code online through running it on heroku and via the gitpod CLI. I kept testing the code and debugging it until I 
     corrected the code so that it ran properly and all connections were correct.
     When testing I found that sometimes I had to use alternative platforms to test the code when debugging as the website and code would not launch properly. 
-    To achieve that I used Codepen and webbased inspect tool to try find the problems.
+    To achieve that I used Codepen and webbased inspection tool to try find the problems.
+    Then corrected them on the gitpod server.
 
 # Defensive Programming:
-    I used git ignore to hide files with passwords and user information.
+    I used git ignore to hide files with passwords and user information. ALso added asecurity key to the app.py file.
 
 # Version Control:
     I used Github to save files and updates to the files through regular Git commands like add,commit and push when developing my code.
@@ -34,7 +35,7 @@
     web application.
 
 #User functionality and structure:
-    I used a navigation bar for users to navigate from page to page with a common layout across each page.
+    I used a navigation button for users to navigate from page to page with a common layout across each page.
     I also made sure I was allowing the user to Create data in the data base, Read data, Update or edit the existing data and to allow them functionality to Delete data.
 
 #Attribution and resources:
