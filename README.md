@@ -14,13 +14,13 @@
     Also users of other locks can add to the database and share their experience in the description of the lock giving it's,brand,general description and the Pros and Cons the lock offers the user based on theior experience.
 
 # UX and wireframes:
-    https://www.wireframes.org/tiger/data/codinghamster90/home_5e418536d06db.htm Homepage wire frame.
-    https://www.wireframes.org/tiger/data/codinghamster90/list_of_locks_5e42ea00c9506.htm List all locks
-    https://www.wireframes.org/tiger/mt.php?pa=product_details_expanded__5e42d468ef917.htm Expanded details
-    https://www.wireframes.org/tiger/data/codinghamster90/read_data_page_5e42e0afde91d.htm Read data
-    https://www.wireframes.org/tiger/data/codinghamster90/edit_data_5e42e1080754f.htm Edit data
-    https://www.wireframes.org/tiger/data/codinghamster90/delete_data_5e42e0eabb0c2.htm Delete data
-    https://www.wireframes.org/tiger/data/codinghamster90/add_data_5e42e8aad7241.htm Add data
+    Homepage wire frame : https://www.wireframes.org/tiger/data/codinghamster90/home_5e418536d06db.htm
+    List all locks : https://www.wireframes.org/tiger/data/codinghamster90/list_of_locks_5e42ea00c9506.htm 
+    Expanded details : https://www.wireframes.org/tiger/mt.php?pa=product_details_expanded__5e42d468ef917.htm
+    Read data : https://www.wireframes.org/tiger/data/codinghamster90/read_data_page_5e42e0afde91d.htm 
+    Edit data : https://www.wireframes.org/tiger/data/codinghamster90/edit_data_5e42e1080754f.htm 
+    Delete data : https://www.wireframes.org/tiger/data/codinghamster90/delete_data_5e42e0eabb0c2.htm 
+    Add data : https://www.wireframes.org/tiger/data/codinghamster90/add_data_5e42e8aad7241.htm 
 
 # Technologies used:
     Html5,CSS3,Javascript,Jquery,Python3,Heroku,MongoDB Atlas,
