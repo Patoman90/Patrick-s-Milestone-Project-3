@@ -16,11 +16,17 @@
 # UX and wireframes:
 
 Homepage wire frame : https://www.wireframes.org/tiger/data/codinghamster90/home_5e418536d06db.htm
+
 List all locks : https://www.wireframes.org/tiger/data/codinghamster90/list_of_locks_5e42ea00c9506.htm 
+
 Expanded details : https://www.wireframes.org/tiger/mt.php?pa=product_details_expanded__5e42d468ef917.htm
+
 Read data : https://www.wireframes.org/tiger/data/codinghamster90/read_data_page_5e42e0afde91d.htm 
+
 Edit data : https://www.wireframes.org/tiger/data/codinghamster90/edit_data_5e42e1080754f.htm 
+
 Delete data : https://www.wireframes.org/tiger/data/codinghamster90/delete_data_5e42e0eabb0c2.htm 
+
 Add data : https://www.wireframes.org/tiger/data/codinghamster90/add_data_5e42e8aad7241.htm 
 
 # Technologies used:
