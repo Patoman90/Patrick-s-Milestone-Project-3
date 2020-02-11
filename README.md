@@ -3,6 +3,9 @@
     Project name: Security products and reviews.
 
 #Deployment:
+    The code wa made on Gitpod then pushed to my remote repository on my github account.
+    From there my github repository is connected to my Heroku account where the website is hosted.
+    I then connected up the Heroku app to the online database on Mongo DB Atlas where data is retrieved and pushed via the website.
     Link to the website is : https://locks-data-centric.herokuapp.com/
 
 # Aims and Objectives:
@@ -27,11 +30,37 @@ Edit data : https://www.wireframes.org/tiger/data/codinghamster90/edit_data_5e42
 
 Delete data : https://www.wireframes.org/tiger/data/codinghamster90/delete_data_5e42e0eabb0c2.htm 
 
-Add data : https://www.wireframes.org/tiger/data/codinghamster90/add_data_5e42e8aad7241.htm 
+Add data : https://www.wireframes.org/tiger/data/codinghamster90/add_data_5e42e8aad7241.htm
+
+
+# User stories:
+
+    As a user I want to find a good lock, save money, make a informed choice on a product, promote a good product and make changes.
+    I wanted a simple website with a database that is easy to navigate and understand.
+
+    As a customer looking to buy a Padlock to secure my bike,gate,shed or even locker, I needed a way to make an informed
+    decision when choosing what lock I wanted to use to secure my property.
+
+    As a user I wanted to have a resource that I could reference that is unbiased and not trying to sell me a lock that is
+    simply not suited to my application and budget. I needed a resource where I could give a honest review to other customers
+    using my experience owning a particular lock and give a honest representation of how it performed in practice to save 
+    others on what they will get when they buy a lock.
+
+    As a expert on locks I wanted a way to inform the public on what they get when they buy a lock. The reason is that
+    the lock manufacturers are not always honest when selling a product and very often cut corners to save money at the expense of 
+    the user. I want a way to educate people and do my part to remove the ignorance about security devices such as locks.
+    To do this I need a way to tell potential lock users exactly what a lock offers and what security it can be expected to
+    provide. In order to do this though I need some way of storing my knowledge in a accessable manner that is not hard to
+    find and can be updated by myself or others as the products evolve.
+
+    As someone who has bought a lock that was not sold with honest advertising and packaging, I wanted to inform or warn
+    others about what I expected and what I got so that others can avoid the locks that are literally trash. I have had to learn
+    the hard way that it is better to invest in a quality security device than buy something just to save money and get a inferior lock.
+
 
 # Technologies used:
     Html5,CSS3,Javascript,Jquery,Python3,Heroku,MongoDB Atlas,
-    Materialize framework,Gitpod,Github.
+    Materialize framework,Gitpod,Github and the MockupTiger wireframes tool.
 
 # Testing:
     I constantly tested my code online through running it on heroku and via the gitpod CLI. I kept testing the code and debugging it until I 
