@@ -1,6 +1,9 @@
+""" Imports """
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, TextAreaField
 from wtforms.validators import DataRequired, Length
+
+""" Classes defined here """
 
 
 class CreateLockForm(FlaskForm):
