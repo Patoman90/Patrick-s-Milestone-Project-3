@@ -100,6 +100,11 @@ def get_single_lock(lock_id):
     return render_template('lock_detail.html',
                            locks=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
 
+# Lock listing
+@app.route('/get_all_locks/<locks_id>')
+def get_all_locks(locks_id):
+    return render_template('lock_list.html', locks=mongo.db.Locks.find())
+
 
 # if statement with the app.run method.
 if __name__ == '__main__':
