@@ -5,13 +5,13 @@
         <h3>Lock Listing</h3>
     
         <ul class="collapsible" data-collapsible="accordion">
-             {% for locks in locks %}
+             {% for lock in locks %}
                 <li>
                      <div class="collapsible-header">
                             <a href="{{url_for('edit_data', lock_id=lock._id)}}" class="waves-effect waves-light btn btn_small blue">Edit</a>
 
                             <div class="task_header">
-                                <strong>{{ locks.Brand }}</strong>  - {{ locks.Description }}
+                                <strong>{{ lock.Brand }}</strong>  - {{ lock.Description }}
                             </div>
                      </div>
                 </li>
