@@ -102,7 +102,7 @@ def get_single_lock(lock_id):
 
 """Lock listing"""
 @app.route('/get_all_locks/<locks_id>')
-def get_all_locks(locks_id):
+def get_all_locks():
     return render_template('lock_list.html', locks=mongo.db.Locks.find())
 
 
