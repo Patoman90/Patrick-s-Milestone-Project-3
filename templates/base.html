@@ -5,39 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Security Products and Reviews.</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-  <div>
-     <header>Data centric project</header>
+  <div class="container-fluid">
+        <header>
+            <div class="row-inline">
+                <div class="dropdown col-xs-12, col-sm-12, col-md-4, col-lg-4, col-xl-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="add_lock.html" id="Menu_button" target="_blank"> Add Lock</a>
+                        <a class="dropdown-item" href="delete_lock.html" id="Menu_button"> Delete Lock</a>
+                        <a class="dropdown-item" href="edit_lock.html" id="Menu_button"> Update Lock</a>
+                        <a class="dropdown-item" href="get_all_locks.html" id="Menu_button"> Lock listing</a>
+                        <a class="dropdown-item" href="index.html"  id="Menu_button"> Home</a>   
+                    </div>   
+                </div>
+                 <h1> Data centric milestone project </h1>
+            </div>
+        </header>
   </div>
-    <div class="dropdown">>
-       <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Menu</button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <ul>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <nav>
-                                <a class="dropdown-item" href="add_lock.html" id="Menu_button"> Add Lock</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="delete_lock.html" id="Menu_button"> Delete Lock</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="edit_lock.html" id="Menu_button"> Update Lock</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="get_all_locks.html" id="Menu_button"> Lock listing</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="index.html"  id="Menu_button"> Home</a>
-                        </nav>     
-                   </div>
-               </li>
-           </ul>  
-        </div>  
-  </div>
+
     <h1>Security Products and Reviews.</h1>
     <div class="container" id='textzone'>
         {% block content %}
@@ -49,6 +40,8 @@
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript">
            $(document).ready(function(){
