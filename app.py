@@ -1,17 +1,9 @@
-"""importing the flask library requirements."""
-
-"""import forms"""
 from flask import Flask, render_template, redirect, request, url_for
 from forms import CreateLockForm, UpdateLockForm, ConfirmDelete
-
-"""importing the flask pymongo."""
-from flask_pymongo import PyMongo
-
-"""From the bson library we import ObjectId."""
 from bson.objectid import ObjectId
+import os """Importing the Operating System."""
 
-"""Importing the Operating System."""
-import os
+from flask_pymongo import PyMongo """importing the flask pymongo."""
 
 """Os path if function."""
 if os.path.exists("env.py"):
