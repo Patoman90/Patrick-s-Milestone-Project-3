@@ -1,9 +1,9 @@
 from flask import Flask, render_template, redirect, request, url_for
 from forms import CreateLockForm, UpdateLockForm, ConfirmDelete
 from bson.objectid import ObjectId
-import os """Importing the Operating System."""
+import os
 
-from flask_pymongo import PyMongo """importing the flask pymongo."""
+from flask_pymongo import PyMongo
 
 """Os path if function."""
 if os.path.exists("env.py"):
