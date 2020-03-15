@@ -4,7 +4,9 @@
 #Menu_button{
    width:100%;
    background-color:#e60000;
-  
+   text-align: center;
+   color:white;
+   display: inline-block;
 }
 
 
@@ -20,6 +22,7 @@
 ul{
     color:#b1dcfb;
     text-shadow: 2px 2px 4px #000000;
+    padding-top: 10px;
     }
 
 li{
@@ -48,32 +51,71 @@ body{
   
 }
 
+section{
+    margin: auto;
+    display: inline-block;
+    border: #e60000;
+    border-width: 15px;
+    padding-bottom: 25px;
+}
 
+p{
+    margin-top: 0;
+}
+
+.custom_text{
+    font-size: 25px;
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#add_lock_text{
+    font-size: 25px;
+    color:whitesmoke;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top: 10px;
+}
 
 
 
 /*-------------H1 - H3------------------------------- */
 h1{
     position: relative;
-    text-align:center;
+    text-align: center;
     color: #b1dcfb;
     text-shadow: 2px 2px 4px #000000;
 }
 h2{
     position: relative;
-    text-align:center;
+    text-align: center;
     color: #b1dcfb;
     text-shadow: 2px 2px 4px #000000;
 }
 h3{
     position: relative;
-    text-align:center;
+    text-align: center;
     color: #b1dcfb;
     text-shadow: 2px 2px 4px #000000;
+}
+
+#add-lock-heading{
+    padding: 0px, 45px, 0px, 45px;
+    text-align: center;
+    color: #b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+strong{
+    font-size: 25px;
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 50px;
 }
  /*-------------------Footer-------------- */
 
  footer{
+      padding-top: 10px;
+      font-size: 30px;
       color: #b1dcfb;
       margin-bottom: 5px;
       text-align: center;
@@ -87,4 +129,15 @@ header{
     color: #b1dcfb;
     margin-top: 5px;
     text-shadow: 2px 2px 4px #000000;
+    display: inline-block;
+}
+
+#Site-name{
+    padding: 100px, 25px, 100px, 25px;
+    display: inline-block;
+    
+}
+#Site-name-div{
+    padding: 50px, 0px, 50px, 0px;
+    display: inline-block
 }

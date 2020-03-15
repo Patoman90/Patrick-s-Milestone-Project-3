@@ -10,47 +10,38 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
 </head>
 <body>
-  <div class="container-fluid">
-        <header>
-            <div class="row-inline">
-                <div class="dropdown col-xs-12, col-sm-12, col-md-4, col-lg-4, col-xl-3">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="Menu_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Menu
-                    </button>
-                    <div class="container">
-                        <div class="dropdown-menu col-xs-12, col-sm-12, col-md-4, col-lg-4, col-xl-3" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="{{ url_for('add_lock') }}" id="Menu_button"> Add Lock</a>
-                            <a class="dropdown-item" href="{{ url_for('get_all_locks') }}" id="Menu_button"> Lock listing</a>
-                            <a class="dropdown-item" href="{{ url_for('index') }}" id="Menu_button"> Home</a>   
-                        </div>
-                    </div>   
-                </div>
-            </div>
-        </header>
-  
-
-        <section class="row">
-            <div class="col-xs-12, col-sm-12, col-md-8, col-lg-8, col-xl-9">
-                <h2>Security Products and Reviews.</h2>
-            </div>
-        
-            <div class="container" id='textzone'>
-                <div class="row">
-                    <div class="col-xs-12, col-sm-12, col-md-8, col-lg-8, col-xl-9">
-                        {% block content %}
-                        {% endblock %}
+    <header class="container-fluid">
+        <div class="row no-gutters">
+            <div class="dropdown col-xs-12, col-sm-12, col-md-4, col-lg-4, col-xl-3">
+                <button class="btn btn-danger dropdown-toggle" type="button" id="Menu_button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Menu
+                </button>
+                <div class="container">
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{{ url_for('add_lock') }}" id="Menu_button"> Add Lock</a>
+                        <a class="dropdown-item" href="{{ url_for('get_all_locks') }}" id="Menu_button"> Lock listing</a>
+                        <a class="dropdown-item" href="{{ url_for('index') }}" id="Menu_button"> Home</a>   
                     </div>
+                </div>   
+            </div>
+            <div class="col-xs-12, col-sm-12, col-md-8, col-lg-8, col-xl-9">
+                <h2 id="Site-name">Padlocks and Reviews.</h2>
+            </div>
+        </div>
+    </header>
+    <section class="row">
+        <div class="container-fluid" id='textzone'>
+            <div class="row">
+                <div class="col-xs-12, col-sm-12, col-md-8, col-lg-8, col-xl-9">
+                    {% block content %}
+                    {% endblock %}
                 </div>
             </div>
-        
-        </section>
-    
-    
-    
-        <div class="col-xs-12, col-sm-12, col-md-4, col-lg-4, col-xl-3">
-            <footer>Made by Patrick Trollip 2019</footer>
         </div>
-    </div>
+    </section>
+    <footer class="container-fluid">
+        Made by Patrick Trollip 2019
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>

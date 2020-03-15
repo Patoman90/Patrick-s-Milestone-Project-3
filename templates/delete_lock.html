@@ -5,14 +5,14 @@
             {{ form.csrf_token }}
             <p>
                 {{ form.brand.label }}<br>
-                {{ form.brand(size=120) }}<br>
+                {{ form.brand(size=30) }}<br>
                 {% for error in form.brand.errors %}
                     <span style="color: red;">{{ error }}</span>
                 {% endfor %}
             </p>
 
             <h2>Are you sure you want to delete this lock?</h2>
-            <p>{{ form.submit }}</p>
+            <button type="button" class="btn btn-success"> {{ form.submit }} </button>
         </form>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

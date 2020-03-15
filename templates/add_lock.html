@@ -1,40 +1,45 @@
-{% extends 'base.html' %} {% block content %}
-
-    <h3>Add lock to database</h3>
-
-    <div class="row" id="add_lock_text">
+{% extends 'base.html' %} {% block content %} 
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-9">
+                <h3 id="add-lock-heading">Add a lock</h3>
+            </div>
+        </div>
+    
         <form action="" method="POST" class="col s12" enctype="multipart/form-data">
             {{ form.csrf_token }}
-            <p id="add_lock_text">>
+            <p id="add_lock_text">
                 {{ form.brand.label }}<br>
-                {{ form.brand(size=120) }}<br>
+                {{ form.brand(size=30) }}<br>
                 {% for error in form.brand.errors %}
                     <span style="color: red;">{{ error }}</span>
                 {% endfor %}
             </p>
-            <p id="add_lock_text">>
+            <p id="add_lock_text">
                 {{ form.description.label }}<br>
                 {{ form.description(col="120", rows="5") }}<br>
                 {% for error in form.description.errors %}
                     <span style="color: red;">{{ error }}</span>
                 {% endfor %}
             </p>
-            <p id="add_lock_text">>
+            <p id="add_lock_text">
                 {{ form.pros.label }}<br>
                 {{ form.pros(col="120", rows="5") }}<br>
                 {% for error in form.pros.errors %}
                     <span style="color: red;">{{ error }}</span>
                 {% endfor %}
             </p>
-            <p id="add_lock_text">>
+            <p id="add_lock_text">
                 {{ form.cons.label }}<br>
                 {{ form.cons(col="120", rows="5") }}<br>
                 {% for error in form.cons.errors %}
                     <span style="color: red;">{{ error }}</span>
                 {% endfor %}
             </p>
-            <p id="add_lock_text">>{{ form.submit }}</p>
+            <button type="button" class="btn btn-success"> {{ form.submit }} </button>
         </form>
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 {% endblock %}

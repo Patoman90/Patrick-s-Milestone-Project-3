@@ -6,7 +6,7 @@
             {{ form.csrf_token }}
             <p id="add_lock_text">
                 {{ form.brand.label }}<br>
-                {{ form.brand(size=120) }}<br>
+                {{ form.brand(size=30) }}<br>
                 {% for error in form.brand.errors %}
                     <span style="color: red;">{{ error }}</span>
                 {% endfor %}
@@ -32,8 +32,11 @@
                     <span style="color: red;">{{ error }}</span>
                 {% endfor %}
             </p>
-            <p>{{ form.submit }}</p>
+            <button type="button" class="btn btn-success"> {{ form.submit }} </button>
         </form>
+    </div>
+    <div>
+        <a href="{{url_for('get_all_locks', lock_id=locks._id)}}"><button type="button" class="btn btn-danger"> Return to list </button></a>
     </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 {% endblock %}
