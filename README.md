@@ -1,10 +1,10 @@
 # Title:
     Data centric milestone by Patrick Trollip.
-    Project name: Security products and reviews.
+    Project name: Padlocks and reviews.
 
 #Deployment:
-    The code wa made on Gitpod then pushed to my remote repository on my github account.
-    From there my github repository is connected to my Heroku account where the website is hosted.
+    The code was written on Gitpod then where I used git version control to push to my remote repository on my github account.
+    From there my github repository was connected to my Heroku account where the website is hosted.
     I then connected up the Heroku app to the online database on Mongo DB Atlas where data is retrieved and pushed via the website.
     Link to the website is : https://locks-data-centric.herokuapp.com/
 
@@ -59,11 +59,19 @@ Add data : https://www.wireframes.org/tiger/data/codinghamster90/add_data_5e42e8
 
 
 # Technologies used:
-    Html5,CSS3,Javascript,Jquery,Python3,Heroku,MongoDB Atlas,
-    Materialize framework,Gitpod,Github and the MockupTiger wireframes tool.
+    Html5,
+    CSS3,
+    Javascript,
+    Jquery,Python3,
+    Heroku,
+    MongoDB Atlas,
+    Font-awesome,
+    Gitpod,
+    Github and the MockupTiger wireframes tool.
 
 # Testing:
-    I constantly tested my code online through running it on heroku and via the gitpod CLI. I kept testing the code and debugging it until I 
+    I constantly tested my code online through running it on heroku, Chrome developer tools and via the gitpod commandline interface with appropriate commands.
+    I kept testing the code and debugging it until I 
     corrected the code so that it ran properly and all connections were correct.
     When testing I found that sometimes I had to use alternative platforms to test the code when debugging as the website and code would not launch properly. 
     To achieve that I used Codepen and webbased inspection tool to try find the problems.
@@ -71,6 +79,7 @@ Add data : https://www.wireframes.org/tiger/data/codinghamster90/add_data_5e42e8
 
 # Defensive Programming:
     I used git ignore to hide files with passwords and user information. ALso added asecurity key to the app.py file.
+    I also set debug to false.
 
 # Version Control:
     I used Github to save files and updates to the files through regular Git commands like add,commit and push when developing my code.
@@ -100,5 +109,5 @@ Add data : https://www.wireframes.org/tiger/data/codinghamster90/add_data_5e42e8
 
     DeploymentDeploymentMongoDataBase = https://cloud.mongodb.com
 
-    Image I borowed = https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwisenetasia.com%2Fwp-content%2Fuploads%2F2016%2F09%2Fhdr-lock-dlp.png&f=1&nofb=1
+    Image I borrowed = https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F0c%2FAntique_Padlocks_-_Treasures_in_the_Wall_Museum_-_Akko_%2528Acre%2529_-_Israel.jpg&f=1&nofb=1
 

@@ -1,4 +1,13 @@
-/*----------Buttons------------------------------- */
+
+ /*--------------Header---------------------*/
+header{
+    text-align: center ;
+    color: #b1dcfb;
+    margin-top: 5px;
+    text-shadow: 2px 2px 4px #000000;
+    display: inline-block;
+}
+
 
 /*-------Navbar Buttons---------------------------------- */
 #Menu_button{
@@ -10,13 +19,29 @@
 }
 
 
-/* -----------Option Buttons--------------------------------- */
+/* ----------------Buttons--------------------------------- */
 .btn_small{
     height: 50px;
     width: 33%;
     line-height: 24px;
     margin: 5px 5px;
     padding: 0 0.5em;
+}
+button.btn.btn-warning{
+    padding:5px;
+}
+
+
+
+ /*-------------Body elements------------------------------- */
+
+
+body{
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+    padding:20px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F0c%2FAntique_Padlocks_-_Treasures_in_the_Wall_Museum_-_Akko_%2528Acre%2529_-_Israel.jpg&f=1&nofb=1");
+  
 }
 
 ul{
@@ -30,27 +55,6 @@ li{
     text-shadow: 2px 2px 4px #000000;
     }
 
-#lock_title{
-    color:#b1dcfb;
-    text-shadow: 2px 2px 4px #000000;
-    }
-
-#textzone{
-    color:#b1dcfb;
-    text-shadow: 2px 2px 4px #000000;
-}
-
- /*-------------Body elements------------------------------- */
-
-
-body{
-    color:#b1dcfb;
-    text-shadow: 2px 2px 4px #000000;
-    padding:20px;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F0c%2FAntique_Padlocks_-_Treasures_in_the_Wall_Museum_-_Akko_%2528Acre%2529_-_Israel.jpg&f=1&nofb=1");
-  
-}
-
 section{
     margin: auto;
     display: inline-block;
@@ -62,6 +66,15 @@ section{
 p{
     margin-top: 0;
 }
+
+strong{
+    font-size: 25px;
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 50px;
+}
+
+/*-------------Text elements------------------------------- */
 
 .custom_text{
     font-size: 25px;
@@ -76,6 +89,36 @@ p{
     padding-top: 10px;
 }
 
+
+#Site-name{
+    padding: 100px, 25px, 100px, 25px;
+    display: inline-block;
+    
+}
+#Site-name-div{
+    padding: 50px, 0px, 50px, 0px;
+    display: inline-block
+}
+
+
+#add-lock-heading{
+    padding: 0px, 45px, 0px, 45px;
+    text-align: center;
+    color: #b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+#lock_title{
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+    }
+
+#textzone{
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+}
 
 
 /*-------------H1 - H3------------------------------- */
@@ -98,19 +141,7 @@ h3{
     text-shadow: 2px 2px 4px #000000;
 }
 
-#add-lock-heading{
-    padding: 0px, 45px, 0px, 45px;
-    text-align: center;
-    color: #b1dcfb;
-    text-shadow: 2px 2px 4px #000000;
-}
 
-strong{
-    font-size: 25px;
-    color:#b1dcfb;
-    text-shadow: 2px 2px 4px #000000;
-    margin-top: 50px;
-}
  /*-------------------Footer-------------- */
 
  footer{
@@ -122,22 +153,3 @@ strong{
       text-shadow: 2px 2px 4px #000000;
 }
 
-
- /*--------------Header---------------------*/
-header{
-    text-align: center ;
-    color: #b1dcfb;
-    margin-top: 5px;
-    text-shadow: 2px 2px 4px #000000;
-    display: inline-block;
-}
-
-#Site-name{
-    padding: 100px, 25px, 100px, 25px;
-    display: inline-block;
-    
-}
-#Site-name-div{
-    padding: 50px, 0px, 50px, 0px;
-    display: inline-block
-}
