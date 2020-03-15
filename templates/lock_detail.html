@@ -1,10 +1,18 @@
 {% extends 'base.html'%} {% block content %}
 
  <div class="row customone">
-        <h3>Lock Detail</h3>
-        <p id="add_lock_text"><strong>Brand</strong>: {{ locks.brand }}</p>
-        <p id="add_lock_text"><strong>Description:</strong> {{ locks.description }}</p>
-        <p id="add_lock_text"><strong>Pros:</strong>{{ locks.pros }}</p>
-        <p id="add_lock_text"><strong>Cons:</strong>{{ locks.cons }}</p>
+        <div class="col-xs-12, col-sm-12, col-md-8, col-lg-8, col-xl-9">
+            <h3> Lock Details </h3>
+        </div>
+        <div class="col-xs-12, col-sm-12, col-md-8, col-lg-8, col-xl-9">
+            <p id="add_lock_text"><strong>Brand</strong>: {{ locks.brand }}</p>
+            <p id="add_lock_text"><strong>Description:</strong> {{ locks.description }}</p>
+            <p id="add_lock_text"><strong>Pros:</strong>{{ locks.pros }}</p>
+            <p id="add_lock_text"><strong>Cons:</strong>{{ locks.cons }}</p>
+        </div>
+        <div>
+        <a href="{{url_for('get_all_locks', lock_id=locks._id)}}"><button type="button" class="btn btn-danger"> Return to list </button></a>
+        </div>
  </div>
+
 {% endblock %}

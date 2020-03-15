@@ -19,9 +19,8 @@ if os.path.exists("env.py"):
 
 """Defining app, app configuration and mongo."""
 app = Flask(__name__)
-app.config[
-    'MONGO_URI'] = 'mongodb+srv://bootRoot90:MsObongo1990@myFirstCluster-lw6no.mongodb.net/DataCentricLocksProject.Locks?retryWrites=true&w=majority'
 app.config['MONGO_DBNAME'] = 'DataCentricLocksProject'
+app.config['MONGO_URI'] = 'mongodb+srv://bootRoot90:MsObongo1990@myFirstCluster-lw6no.mongodb.net/DataCentricLocksProject.Locks?retryWrites=true&w=majority'
 mongo = PyMongo(app)
 
 SECRET_KEY = os.urandom(32)
@@ -100,14 +99,15 @@ def get_single_lock(lock_id):
     return render_template('lock_detail.html',
                            locks=mongo.db.Locks.find_one({'_id': ObjectId(lock_id)}))
 
+
 """Lock listing"""
-@app.route('/get_all_locks/<locks_id>')
+@app.route('/get_all_locks')
 def get_all_locks():
     return render_template('lock_list.html', locks=mongo.db.Locks.find())
 
 
 """if statement with the app.run method."""
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',
-            port=(os.environ.get('PORT')),
+    app.run(host=os.environ.get('IP', '0.0.0.0'),
+            port=int(os.environ.get('PORT', '5000')),
             debug=True)

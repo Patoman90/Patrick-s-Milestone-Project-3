@@ -1,15 +1,9 @@
 /*----------Buttons------------------------------- */
 
 /*-------Navbar Buttons---------------------------------- */
-button{
-  
-  padding:0;
-  border:0;
-}
-
 #Menu_button{
    width:100%;
-   background-color:#0089ec;
+   background-color:#e60000;
   
 }
 
@@ -23,22 +17,34 @@ button{
     padding: 0 0.5em;
 }
 
-ul{color:#b1dcfb;}
+ul{
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+    }
 
-li{color:#fafafa;}
+li{
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+    }
 
-#lock_title{color:#0089ec;}
+#lock_title{
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+    }
 
-#textzone{color:#d7eeff;}
+#textzone{
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
+}
 
  /*-------------Body elements------------------------------- */
 
 
 body{
-    color:#fafafa;
-    background-color:rgba(0,0,0,0.87);
+    color:#b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
     padding:20px;
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwisenetasia.com%2Fwp-content%2Fuploads%2F2016%2F09%2Fhdr-lock-dlp.png&f=1&nofb=1");
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F0c%2FAntique_Padlocks_-_Treasures_in_the_Wall_Museum_-_Akko_%2528Acre%2529_-_Israel.jpg&f=1&nofb=1");
   
 }
 
@@ -48,30 +54,37 @@ body{
 
 /*-------------H1 - H3------------------------------- */
 h1{
-  text-align:center;
-  font-family:sans;
-  color:blue;
+    position: relative;
+    text-align:center;
+    color: #b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
 }
 h2{
-  text-align:center;
-  color:#b1dcfb;
+    position: relative;
+    text-align:center;
+    color: #b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
 }
 h3{
-  text-align:center;
-  color:#0089ec;
+    position: relative;
+    text-align:center;
+    color: #b1dcfb;
+    text-shadow: 2px 2px 4px #000000;
 }
  /*-------------------Footer-------------- */
 
  footer{
-      color:#65fff1;
+      color: #b1dcfb;
       margin-bottom: 5px;
-      text-align: center ;
+      text-align: center;
+      text-shadow: 2px 2px 4px #000000;
 }
 
 
  /*--------------Header---------------------*/
 header{
     text-align: center ;
-    color:#65fff1;
+    color: #b1dcfb;
     margin-top: 5px;
+    text-shadow: 2px 2px 4px #000000;
 }
